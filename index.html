@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/javascript/game.js"></script>
+  <title>Word Guess Game</title>
+</head>
+<body>
+  <div>
+    <p id="directions-text">Press any key to get started.</p>
+    <p id="wins-text">Wins</p>
+    <p id="numberOfWins"></p> <!--var will change win count-->
+    <p id="currentMovie">Current Movie</p>
+    <p id=movieName>_ _ _ _ _</p> <!--spaces will change based on # of characters in movie title-->
+    <p id="guessesRemaining">Number of Guesses Remaining</p>
+    <p id="numberGuess"></p> <!--var will change Guess Count Remaining count-->
+    <p id="lettersGuessed">Letters Already Guessed</p>
+    <p id="userGuess"></p><!--var will show characters guessed-->
+  </div>
+
+  <script type="text/javascript">
+    var movieNames = ["Avatar", "Titanic", "Avengers", "Rocky", "Inception"]
+    var alphabet = ["a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z"];
+    var wins = 0;
+
+    var directions = document.getElementById("directions-text");
+    var numberOfWins = document.getElementById("wins-text");
+    var currentMovie = document.getElementById("numberOfWins");
+    var currentMovie = document.getElementById("currentMovie");
+    var currentMovie = document.getElementById("movieName");
+    var currentMovie = document.getElementById("guessesRemaining");
+    var currentMovie = document.getElementById("numberGuess");
+    var currentMovie = document.getElementById("lettersGuessed");
+    var currentMovie = document.getElementById("userGuess");
+
+    //Function to run when key is pressed
+    document.onkeyup = function(event){
+      var userGuess = event.key;
+    }
+
+  </script>
+  
+</body>
+</html>
