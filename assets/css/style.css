@@ -1,3 +1,20 @@
-h3,h4,p{
-  text-align: center;
+
+p {
+margin: 0;
+padding: 0;
 }
+
+body{ 
+  background-image: url(../images/Movie-Theater.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.gameSection{
+  margin: 60px 0px 0px;
+  text-align: center;
+  color: red;
+  font-size: 16px;
+}
+
+

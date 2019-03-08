@@ -4,21 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Word Guess Game</title>
 </head>
+
 <body>
-  <div>
-    <h3>Press any key to get started.</h3>
-    <br>
-    <h4>Wins</h4>
-    <p id="numberOfWins">0</p> <!--var will change win count-->
-    <h4>Current Movie</h4>
-    <p id="movieName"></p> <!--spaces will change based on # of characters in movie title-->
-    <h4>Number of Guesses Remaining</h4>
-    <p id="numberGuess"></p> <!--var will change Guess Count Remaining count-->
-    <h4>Letters Already Guessed</h4>
-    <p id="guessedLetters"></p><!--var will show characters guessed-->
+  <div class="container">
+    <div class="main" class="row">
+      <div class="col-lg-4"></div>
+        <div class="gameSection" class="col-lg-4">
+          <h6>Press any key to get started.</h3>
+         
+          <p>Wins</p>
+          <p id="numberOfWins">0</p> <!--var will change win count-->
+          <p>Current Movie</p>
+          <p id="movieName"></p> <!--spaces will change based on # of characters in movie title-->
+          <p>Number of Guesses Remaining</p>
+          <p id="numberGuess"></p> <!--var will change Guess Count Remaining count-->
+          <p>Letters Already Guessed</p>
+          <p id="guessedLetters"></p><!--var will show characters guessed-->
+        </div>
+      <div class="col-lg-4"></div>
+    </div>
   </div>
   <script src="assets/javascript/game.js"></script>
 </body>
